@@ -1,1 +1,1 @@
-run = "set -e; './POO/AULA.CS'; mono Main.exe"
+run = "set -e; './POO/AULA.cs'; mono Main.exe"
