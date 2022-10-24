@@ -9,7 +9,7 @@ public class Program {
     h = int.Parse(hora[0]);
     m = int.Parse(hora[1]);
     s = int.Parse(hora[2]);
-    r1 = ((m*60)+((h*60)*60)+s)*300;
+    r1 = ((m*60)+((h*60)*60)+s)*3000;
 Console.WriteLine(r1);
     v = ((((h*60)*60)+(m*60)+s)*3000);
     Console.WriteLine(v);
