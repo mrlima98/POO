@@ -1,1 +1,1 @@
-run = "set -e; csc './POO/Lista6/2188.cs'; mono 2188.exe"
+run = "set -e; csc './POO/Lista7/Q3.cs'; mono Q3.exe"
