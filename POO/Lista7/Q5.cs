@@ -2,9 +2,9 @@ using System;
 
 class Program{
 
-  public static void FormatarTexto(ref string text){
-   text = text.Replace(" ","");
-    
+  public static string FormatarTexto(string text){
+   string texto1 = text.Replace(" ","");
+    return texto1;
   }
 
 
@@ -12,7 +12,6 @@ class Program{
   public static void Main (string [] args){
     
     string texto = Console.ReadLine();
-    FormatarTexto(ref texto);
-    Console.WriteLine(texto);
+    Console.WriteLine(FormatarTexto(texto));
   }
 }
