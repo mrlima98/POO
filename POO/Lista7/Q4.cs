@@ -3,7 +3,9 @@ using System;
 class Program{
 
   public static int MMC (int num1, int num2){
-    int resto,a,b;
+    int resto=0;
+    int a=num1;
+    int b=num2;
 
     do{
       resto = a%b;
