@@ -3,8 +3,8 @@ using System;
 class Program{
 
   public static string FormatarTexto(string text){
-   string texto1 = text.Replace(" ","");
-    return texto1;
+   string texto1 = text.Trim();
+    
   }
 
 
