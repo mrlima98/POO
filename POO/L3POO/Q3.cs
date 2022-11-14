@@ -4,9 +4,9 @@ class Program{
 
 
   public static void Main(string [] args){
-    Conversor x = new Conversor();
+    Conversor x = new Conversor(8);
 
-    x.SetNum(2);
+    
     Console.WriteLine(x.GetNum());
     Console.WriteLine(x.Binario());
     Console.WriteLine(x.ToString());
@@ -17,6 +17,12 @@ class Conversor{
   private int num;
   int dividendo;
     string valor;
+
+
+  public Conversor(){}
+  public Conversor(int vn){
+    if (vn>0) num = vn;
+  }
   public void SetNum(int vn){
     if (vn>0) num = vn;
   }
