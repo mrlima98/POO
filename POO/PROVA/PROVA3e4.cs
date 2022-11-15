@@ -4,18 +4,18 @@ class Program{
   public static void Main (string [] args){
 
     CartaBaralho x = new CartaBaralho(5, "ouro");
-      CartaBaralho y = new CartaBaralho(5, "paus");
+      CartaBaralho y = new CartaBaralho(6, "paus");
     Console.WriteLine(x.ToString());
     Console.WriteLine(y.ToString());
+    Console.WriteLine(CartaBaralho.Comparar(x,y));
     
-    Console.WriteLine(Comparar(5, "paus"));
   }
 }
 
 class CartaBaralho{
   private int carta;
   private string naipe;
-  bool validacao;
+  
 
   public CartaBaralho(int vc, string vn){
     if(vc>0 && vc<13) carta = vc;
@@ -35,12 +35,13 @@ class CartaBaralho{
     return $"Carta {carta}, Naipe: {naipe}";
   }
 
-  public bool Comparar(int vc, string vn){
-    if (GetCarta()==vc && GetNaipe()==vn){
-      validacao = true;
-    }
+  public static bool Comparar(CartaBaralho x, CartaBaralho y){
+    
+    
+    return x.GetCarta() == y.GetCarta();
+    
+    
 
-    return validacao;
   }
   
 }
