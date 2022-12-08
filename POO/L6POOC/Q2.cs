@@ -13,6 +13,9 @@ class Program{
     Console.WriteLine(x.Proximo());
     Console.WriteLine(x.Proximo());
     Console.WriteLine(x.Proximo());
+    Console.WriteLine(x.Proximo());
+    Console.WriteLine(x.Proximo());
+    Console.WriteLine(x.Proximo());
     Console.WriteLine();
     
     foreach(int t in x.Listar())
@@ -42,10 +45,13 @@ class Bingo{
       return -1;
     }
     else{
-    sort[k] = r;
-    k++;
-    return r;
+      if (Array.IndexOf(sort,r) == -1){
+      sort[k] = r;
+      k++;
+      return r;
+      }
     }
+    return 0;
   }
 
   public int [] Listar(){
